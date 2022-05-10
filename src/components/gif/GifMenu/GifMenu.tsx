@@ -1,4 +1,4 @@
-import { SearchForm, SearchInput } from "@/components/core/SearchInput";
+import { SearchForm, SearchInput } from "@/components/core";
 import { getSearchGifs } from "@/services/gifs";
 import { HStack, Select } from "@chakra-ui/react";
 import { useQueryClient } from "react-query";

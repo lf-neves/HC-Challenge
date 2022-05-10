@@ -1,12 +1,11 @@
-import { Page, PageBody, PageHeader } from "@/components/core";
-import { NavMenu } from "@/components/core/NavMenu";
+import { Page, PageBody, PageHeader, NavMenu } from "@/components/core"
 import { GifBoard } from '@/components/gif'
-import { getTrendingGifs } from "@/services/gifs";
-import { useEffect } from "react";
+import { getTrendingGifs } from "@/services/gifs"
+import { useEffect } from "react"
 import { useQuery } from 'react-query'
 import { useAtom } from 'jotai'
-import { gifsAtom } from "@/lib/store";
-import { useSortedArray } from "@/lib/hooks";
+import { gifsAtom } from "@/lib/store"
+import { useSortedArray } from "@/lib/hooks"
 
 export const Home = (): JSX.Element => {
 

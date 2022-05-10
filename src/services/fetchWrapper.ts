@@ -14,7 +14,7 @@ async function get(url: string) {
         method: 'GET',
     }
 
-    return fetch(url, requestOptions).then(handleResponse)
+    return window.fetch(url, requestOptions).then(handleResponse)
 }
 
 async function post(url: string, body: Dict) {

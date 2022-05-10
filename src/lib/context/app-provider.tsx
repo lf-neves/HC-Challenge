@@ -6,7 +6,6 @@ import { ReactQueryDevtools } from 'react-query/devtools'
 import theme from '@/theme'
 const queryClient = new QueryClient()
 
-
 function AppProviders({ children }: { children: ReactNode }) {
     return (
         <StrictMode>

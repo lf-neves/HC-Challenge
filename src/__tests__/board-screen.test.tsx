@@ -5,11 +5,8 @@ import { AppProviders } from '../lib/context/app-provider'
 test('renders all gifs information', async () => {
     render(<App />, { wrapper: AppProviders })
 
+    await waitForElementToBeRemoved(screen.queryByText(/loading/i))
     screen.debug()
-    // await waitForElementToBeRemoved(screen.queryByText(/loading/i))
-
-
-    expect(1).toBe(1)
 })
 
 test.todo('can change order select')
