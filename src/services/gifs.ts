@@ -31,8 +31,17 @@ export type GiphyModel = {
     title: string
 }
 
-export const getTrendingGifs = async () => {
-    return fetchWrapper.get(`${apiURL}/trending?api_key=${apiKey}`)
+export const getTrendingGifs = async (pageParam: any) => {
+
+    const offset = pageParam ? pageParam.offset : 0
+    const limit = 25
+
+    const data = await fetchWrapper.get(`${apiURL}/trending?api_key=${apiKey}&offset=${offset}&limit=${limit}`)
+    return {
+        response: data.data, nextCursor: {
+            offset: offset + limit
+        }
+    }
 }
 
 export const getSearchGifs = async (searchParam: string) => {
