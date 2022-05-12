@@ -1,8 +1,8 @@
 # HC-Challenge
-Web app build with Vite JS and React to consume an API Gifs
+Web app build with Vite JS and React to consumes giphy API
 
 
-> This project uses giphy api data and allows user to navigate into the gifs by search, ordering or loading more gifs.
+> This project uses giphy api data and allows user to navigate into the gifs by search, ordering or loading more.
 
 ### Improvements
 
