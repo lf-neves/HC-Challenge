@@ -7,8 +7,8 @@ export const GifBoard = ({ gifs }: { gifs: GiphyModel[] }): JSX.Element => {
 
     return (
         <Box>
-            <GifMenu py={5} mb={5} />
-            <Wrap>
+            <GifMenu py={5} mb={5} ml={10} />
+            <Wrap justify={'center'}>
                 {gifs.map((gif, index) => (
                     <GifCard key={index} gif={gif} />
                 ))}

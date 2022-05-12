@@ -7,7 +7,7 @@ export type SearchForm = {
 }
 
 export const SearchInput = ({ onSubmit, ...props }: { onSubmit: (data: SearchForm) => void }) => {
-    const { handleSubmit, register } = useForm<SearchForm>()
+    const { handleSubmit, register, formState: { isSubmitting } } = useForm<SearchForm>()
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -23,6 +23,7 @@ export const SearchInput = ({ onSubmit, ...props }: { onSubmit: (data: SearchFor
                     aria-label='Search database'
                     icon={<SearchIcon />}
                     type='submit'
+                    isLoading={isSubmitting}
                 />
             </Flex>
         </form>
