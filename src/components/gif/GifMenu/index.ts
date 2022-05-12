@@ -1,1 +1,1 @@
-export * from './GifMenu'
+export * from './GifMenu';

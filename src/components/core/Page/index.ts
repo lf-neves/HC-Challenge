@@ -1,3 +1,3 @@
-export * from './Page'
-export * from './PageBody'
-export * from './PageHeader'
+export * from './Page';
+export * from './PageBody';
+export * from './PageHeader';

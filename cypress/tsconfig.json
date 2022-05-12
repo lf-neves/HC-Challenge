@@ -1,15 +1,8 @@
 {
-    "compilerOptions": {
-      "strict": true,
-      "baseUrl": "../node_modules",
-      "paths": {
-        "~@/*": ["../src/*"]
-      },
-      "jsx": "react",
-      "target": "es6",
-      "lib": ["es6", "dom", "es2017.string"],
-      "types": ["cypress", "@testing-library/cypress"],
-      "moduleResolution": "node"
-    },
-    "include": ["**/*.ts"]
-  }
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "types": ["cypress"]
+  },
+  "exclude": [],
+  "include": ["../node_modules/cypress", "**/*.spec.ts", "./**/*.ts"]
+}

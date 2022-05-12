@@ -21,6 +21,8 @@
       "components/*": ["./src/components/*"]
     }
   },
-  "include": ["src", "cypress/integration/__tests__"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "exclude": [
+    "**/*.spec.ts"
+  ]
 }

@@ -1,2 +1,2 @@
-export * from './gifs'
-export * from './order'
+export * from './gifs';
+export * from './order';

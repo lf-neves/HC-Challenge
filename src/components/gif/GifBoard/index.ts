@@ -1,1 +1,1 @@
-export * from './GifBoard'
+export * from './GifBoard';

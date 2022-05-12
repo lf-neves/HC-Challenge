@@ -1,4 +1,4 @@
 {
   "testFiles": "**/*{test,spec}.{ts,tsx}",
-  "componentFolder": "cypress/integration"
+  "componentFolder": "src"
 }

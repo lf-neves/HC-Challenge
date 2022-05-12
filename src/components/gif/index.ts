@@ -1,3 +1,3 @@
-export * from './GifBoard'
-export * from './GifCard'
-export * from './GifMenu'
+export * from './GifBoard';
+export * from './GifCard';
+export * from './GifMenu';

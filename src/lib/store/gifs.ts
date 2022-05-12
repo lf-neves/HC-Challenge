@@ -1,6 +1,6 @@
-import { GiphyModel } from '@/services/gifs'
-import { atomWithImmer } from 'jotai/immer'
+import { GiphyModel } from '@/services/gifs';
+import { atomWithImmer } from 'jotai/immer';
 
-const gifs: Array<GiphyModel> = []
+const gifs: Array<GiphyModel> = [];
 
-export const gifsAtom = atomWithImmer(gifs)
+export const gifsAtom = atomWithImmer(gifs);

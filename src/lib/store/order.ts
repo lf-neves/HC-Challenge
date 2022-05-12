@@ -1,10 +1,10 @@
-import { atomWithImmer } from 'jotai/immer'
+import { atomWithImmer } from 'jotai/immer';
 
 export enum ORDER_TYPE {
-    recent = 'recent',
-    trending = 'trending_date'
+  recent = 'recent',
+  trending = 'trending_date'
 }
 
-const order: string = ORDER_TYPE.recent
+const order: string = ORDER_TYPE.recent;
 
-export const orderAtom = atomWithImmer(order)
+export const orderAtom = atomWithImmer(order);
