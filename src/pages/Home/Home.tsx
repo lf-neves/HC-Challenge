@@ -7,8 +7,11 @@ import { useSortedArray } from "@/lib/hooks"
 import { Page, PageBody, PageHeader, NavMenu } from "@/components/core"
 import { GifBoard } from '@/components/gif'
 import { Button, Center } from "@chakra-ui/react"
+import { useInView } from 'react-intersection-observer'
 
 export const Home = (): JSX.Element => {
+
+    const { ref, inView } = useInView()
 
     const { data, isLoading, hasNextPage, fetchNextPage, isFetchingNextPage } = useInfiniteQuery(
         'trendingGifs',
@@ -26,6 +29,10 @@ export const Home = (): JSX.Element => {
 
     }, [data])
 
+    useEffect(() => {
+        if (inView) fetchNextPage()
+    })
+
     if (isLoading) return <>Loading ...</>
 
     return (
@@ -37,6 +44,7 @@ export const Home = (): JSX.Element => {
                 <GifBoard gifs={sortedGifs} />
                 <Center>
                     <Button
+                        ref={ref}
                         my={10}
                         onClick={() => fetchNextPage()}
                         colorScheme='blue.600'
