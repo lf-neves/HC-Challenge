@@ -19,9 +19,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "components/*": ["./src/components/*"]
-    },
-    "types": ["cypress", "@testing-library/cypress"]
+    }
   },
-  "include": ["src"],
+  "include": ["src", "cypress/integration/__tests__"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
