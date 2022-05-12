@@ -29,8 +29,7 @@ export const Home = (): JSX.Element => {
     if (isLoading) return <>Loading ...</>
 
     return (
-        // <Page px={5}>
-        <Page>
+        <Page px={20}>
             <PageHeader>
                 <NavMenu />
             </PageHeader>

@@ -18,6 +18,7 @@ export const SearchInput = ({ onSubmit, ...props }: { onSubmit: (data: SearchFor
                     {...register('searchString', { required: true })}
                 />
                 <IconButton
+                    data-testid='searchSubmit'
                     colorScheme='blue'
                     aria-label='Search database'
                     icon={<SearchIcon />}

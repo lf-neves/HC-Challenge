@@ -1,13 +1,12 @@
-import { createRoot } from "react-dom/client";
+import ReactDOM from 'react-dom'
 import App from './App'
 import { AppProviders } from './lib/context/app-provider'
 
-// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-const rootElement = document.getElementById("root")!;
-const root = createRoot(rootElement);
+const rootElement = document.getElementById("root")
 
-root.render(
+ReactDOM.render(
   <AppProviders>
     <App />
   </AppProviders>,
+  rootElement
 )

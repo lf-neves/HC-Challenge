@@ -21,7 +21,7 @@ export const GifMenu = ({ ...props }) => {
         <HStack {...props}>
             {/* <SearchInput mr={5} w='md' onSubmit={onSubmitSearch} /> */}
             <SearchInput onSubmit={onSubmitSearch} />
-            <Select w='fit-content' onChange={(e) => setOrder(e.target.value as ORDER_TYPE)}>
+            <Select w='fit-content' onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setOrder(e.target.value)}>
                 <option value={ORDER_TYPE.recent}>Most Recent</option>
                 <option value={ORDER_TYPE.trending}>Trending Date</option>
             </Select>
